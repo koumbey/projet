@@ -23,14 +23,13 @@ def loadData(filname):
         contenu.append(dic)
     return contenu;
 
-"""
 tweet_data = loadData("data.xlsx");
 
 all_content = " ".join([p['Tweet content'] for p in tweet_data])
 
 youpie = len(all_content)
 
-print(youpie)
+#print(youpie)
 
 tokens= all_content.split()
 
@@ -39,8 +38,9 @@ text = nltk.Text(tokens)
 #Pour visualiser les lignes qui contiennent le mot passé en argument
 #text.concordance("open")
 
-text.collocations()
-"""
+text_col=text.collocations()
+
+print(type(text_col))
 
 # corpus = a group of tweet
 corpus = {
@@ -86,7 +86,7 @@ def idf(term, corpus):
 
 def tf_idf(term, doc, corpus):
     return tf(term, doc) * idf(term, corpus)
-
+"""
 
 # Score queries by calculating cumulative tf_idf score for each term in query
 query_scores = {'a': 0, 'b': 0, 'c': 0}
@@ -104,6 +104,7 @@ print "Overall TF-IDF scores for query '%s'" % (' '.join(QUERY_TERMS), )
 for (doc, score) in sorted(query_scores.items()):
     print doc,score;
 
+"""
 #==================================================================================
 """buzz_data = loadData("data.xlsx");
 QUERY_TERMS = ["home","office","country"]
