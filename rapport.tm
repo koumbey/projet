@@ -1,4 +1,4 @@
-<TeXmacs|1.99.3>
+<TeXmacs|1.99.4>
 
 <style|<tuple|generic|french>>
 
@@ -51,7 +51,18 @@
 
   <section*|Introduction>
 
-  \;
+  Ce document présente le projet que nous avons effectué sur le Google Buzz,
+  en utilisant les différents outils tf-idf, cosinus similarity et
+  collocations.
+
+  Ce projet s'est inscrit dans le projet en python que nous devions réaliser
+  sous la direction de Jean Philippe Attal à l'EISTI.
+
+  Ce rapport s'attardera sur toutes les différentes exécutions que nous avons
+  pu réaliser durant le projet. Nous aborderons tout d'abord les tests du
+  code python qui est contenu dans le chapitre que nous avions sélectionné,
+  puis les améliorations apportées à ces codes avant d'expliquer les intérêts
+  de l'étude.
 
   <new-page*>
 
@@ -233,7 +244,8 @@
   Pour le vocab, la fonction crée un objet qui hérite d'un dictionnaire où
   les clés sont les mots et les valeurs, leur fréquence.
 
-  Pour la collocation, on ne sait pas pour l'instant.
+  Pour la collocation, ou même la co-ocurrence, est la fréquence d'un n-uplet
+  de mot.
 
   <subsection|Tf - Idf>
 
@@ -411,19 +423,43 @@
   <new-page>
 
   <section*|Conclusion>
+
+  Ce projet nous a permis de manipuler des données via l'outil de
+  programmation python, ce qui était intéressant.
+
+  Du point de vue technique, nous avons pu apprendre à manipuler des nouveaux
+  outils en python. Si nous n'avions pas les outils pour avancer, nous nous
+  sommes renseignés sur internet pour trouver des informations qui nous
+  manquaient.
+
+  Par rapport au travail d'équipe, sachant que ce n'est pas la première fois
+  que nous travaillons ensemble, nous avons compris comment mieux travailler,
+  ce qui nous a permis d'être très productif et rapide pour ce projet.
+
+  \;
+
+  \;
+
+  \;
+
+  \;
+
+  \;
+
+  \;
 </body>
 
 <\references>
   <\collection>
-    <associate|auto-1|<tuple|?|3|C:\\Users\\Administrator.admin-PC\\AppData\\Roaming\\TeXmacs\\texts\\scratch\\no_name_4.tm>>
-    <associate|auto-2|<tuple|1|4|C:\\Users\\Administrator.admin-PC\\AppData\\Roaming\\TeXmacs\\texts\\scratch\\no_name_4.tm>>
-    <associate|auto-3|<tuple|1.1|4|C:\\Users\\Administrator.admin-PC\\AppData\\Roaming\\TeXmacs\\texts\\scratch\\no_name_4.tm>>
-    <associate|auto-4|<tuple|1.2|5|C:\\Users\\Administrator.admin-PC\\AppData\\Roaming\\TeXmacs\\texts\\scratch\\no_name_4.tm>>
-    <associate|auto-5|<tuple|1.3|5|C:\\Users\\Administrator.admin-PC\\AppData\\Roaming\\TeXmacs\\texts\\scratch\\no_name_4.tm>>
-    <associate|auto-6|<tuple|1.4|6|C:\\Users\\Administrator.admin-PC\\AppData\\Roaming\\TeXmacs\\texts\\scratch\\no_name_4.tm>>
-    <associate|auto-7|<tuple|2|8|C:\\Users\\Administrator.admin-PC\\AppData\\Roaming\\TeXmacs\\texts\\scratch\\no_name_4.tm>>
-    <associate|auto-8|<tuple|3|9|C:\\Users\\Administrator.admin-PC\\AppData\\Roaming\\TeXmacs\\texts\\scratch\\no_name_4.tm>>
-    <associate|auto-9|<tuple|3|10|C:\\Users\\Administrator.admin-PC\\AppData\\Roaming\\TeXmacs\\texts\\scratch\\no_name_4.tm>>
+    <associate|auto-1|<tuple|?|3>>
+    <associate|auto-2|<tuple|1|4>>
+    <associate|auto-3|<tuple|1.1|4>>
+    <associate|auto-4|<tuple|1.2|5>>
+    <associate|auto-5|<tuple|1.3|5>>
+    <associate|auto-6|<tuple|1.4|6>>
+    <associate|auto-7|<tuple|2|8>>
+    <associate|auto-8|<tuple|3|9>>
+    <associate|auto-9|<tuple|3|10>>
   </collection>
 </references>
 
